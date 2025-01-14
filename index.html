@@ -6,11 +6,15 @@
   <title>Munkáim</title>
 
   <style>
+
+
     .flip-card {
-        display: inline-block;
-        margin: 100px;
-        perspective: 1000px; 
-        text-align:center
+        
+    display: flex;
+    justify-content: center;
+    margin:50px;
+    margin-top: 0;
+
     }
 
     .flip-card-inner {
@@ -20,6 +24,7 @@
         text-align: center;
         transition: transform 0.6s ease-in-out;
         transform-style: preserve-3d; 
+        flex: 0 0 auto;
     }
 
     .flip-card-inner:hover {
@@ -36,7 +41,6 @@
 
     .flip-card-front {
         background-color: #3c7a8a; 
-        padding: 20px;
         color: rgb(255, 255, 255)
     }
 
@@ -47,24 +51,29 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        flex-direction: column;
     }
 
     .flip-card-back p {
         margin: 0;
         font-size: 16px;
         text-align: center;
+        margin-bottom: 3%;
+        margin-left: 8%;
+        margin-right: 8%
     }
 
     body{
-        background-image:url(https://media.istockphoto.com/id/1732963074/photo/starry-night-sky-in-space.jpg?b=1&s=612x612&w=0&k=20&c=Dg_mUPuApkS5-v-jitf3IMgjFBYUk1b7EMRxXDcDfJ4=)
+        background-image:url(https://media.istockphoto.com/id/1732963074/photo/starry-night-sky-in-space.jpg?b=1&s=612x612&w=0&k=20&c=Dg_mUPuApkS5-v-jitf3IMgjFBYUk1b7EMRxXDcDfJ4=);
     }
 
     h1{
         text-align:center;
         color:white;
         margin-top:4%;
-        margin-bottom: 0%;
+        margin-bottom: 5%;
+        text-decoration:underline;
+        font-weight: bold;
     }
 
     #popup {
@@ -170,167 +179,171 @@
   </style>
 </head>
 <body>
+    <div id="overlay"></div>
+    <div id="popup">
+        <h2>Üdvözöllek az oldalamon!</h2>
+        <p>Szia! Takács Istvánnak hívnak, informatikai szakon tanulok, webfejlesztés és szoftverfejlesztés iránt érdeklődöm.  
+        Törekszem olyan projektek készítésére, amelyek egyszerre funkcionálisak és esztétikusak. Nézz körül az oldalon!</p>
 
-<div id="overlay"></div>
-<div id="popup">
-    <h2>Üdvözöllek az oldalamon!</h2>
-    <p>Szia! Takács Istvánnak hívnak, informatikai szakon tanulok, webfejlesztés és szoftverfejlesztés iránt érdeklődöm.  
-    Törekszem olyan projektek készítésére, amelyek egyszerre funkcionálisak és esztétikusak. Nézz körül az oldalon!</p>
+        <img src="kepek/cv.jpg" style="width:250px;height:300px;" >
+        <p></p>
+        <p></p>
+        <a class="link" href="https://www.canva.com/design/DAGHG7inMbo/a7NA79PqWiry_z6uS7NIew/view?utm_content=DAGHG7inMbo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h322aafa985">A CANVA CV LINKJE</a>
+        <p></p>
+        <p></p>
+        <button onclick="closePopup()">Bezárás</button>
+    </div>
 
-    <img src="kepek/cv.jpg" style="width:250px;height:300px;" >
-    <p></p>
-    <p></p>
-    <a class="link" href="https://www.canva.com/design/DAGHG7inMbo/a7NA79PqWiry_z6uS7NIew/view?utm_content=DAGHG7inMbo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h322aafa985">A CANVA CV LINKJE</a>
-    <p></p>
-    <p></p>
-    <button onclick="closePopup()">Bezárás</button>
-</div>
+    <h1>Takács István Munkái</h1>
 
-<h1>Takács István Munkái</h1>
-
-<div class="flip-card">
-    <div class="flip-card-inner">
-        <div class="flip-card-front"> 
-            <header><h3>Értékelő táblázat</h3></header>
-            <img src="kepek/p1.png" style="width:350px;height:350px;">
-            <footer></footer>
+    <div class="flip-card top-cards">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"> 
+                    <header><h3>Értékelő táblázat</h3></header>
+                    <img src="kepek/p1.png" style="width:300px;height:300px;">
+                    <footer></footer>
+                </div>
+                <div class="flip-card-back">
+                    <p>Ez a projekt egy Google Tables-ben készült munkalap amely értékeli a tanulók feladatait és pontokban kiírja azt.</p>
+                    <p></p>
+                    <a class="link"   href="https://docs.google.com/spreadsheets/d/1nRoFYHkS2bm5TiTohq17dJ0if7n9B9UQESmSyez_FxQ/edit?gid=0#gid=0">Ezzel a linkel megnyithatod a publikált weboldalt</a>
+                </div>
+            </div>
         </div>
-        <div class="flip-card-back">
-            <p>Ez a projekt egy Google Tables-ben készült munkalap amely értékeli a tanulók feladatait és pontokban kiírja azt.</p>
-            <p></p>
-            <a class="link"   href="https://docs.google.com/spreadsheets/d/1nRoFYHkS2bm5TiTohq17dJ0if7n9B9UQESmSyez_FxQ/edit?gid=0#gid=0">Ezzel a linkel megnyithatod a publikált weboldalt</a>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"> 
+                    <header><h3>Elégedettségi kérdőív</h3></header>
+                    <img src="kepek/p2.png" style="width:300px;height:300px;">
+                    <footer></footer>
+                </div>
+                <div class="flip-card-back">
+                    <p>Ez a projekt egy elégedettségi kérdőív amely a felhasználók értékelésit összesíti és mutassa ki.</p> 
+                
+                    <a class="link"   href="https://takacsisti.github.io/PROJEKT2/">Ezzel a linkel megnyithatod a publikált weboldalt</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"> 
+                    <header><h3>Wordle (saját projekt)</h3></header>
+                    <img src="kepek/p3.png" style="width:300px;height:300px;">
+                    <footer></footer>
+                </div>
+                <div class="flip-card-back">
+                    <p>Ez a projekt egy wordle játék melyben egy 5 betűs szót kell kitalálni úgy hogy limitált próbálkozásod van, a zöld színű betű azt jelenti hogy a betű jó helyen van, a narancs azt jelenti hogy a betű szerepel a szóban de nem jó helyen van.</p>
+                    <p></p>
+                    <a class="link"   href="https://takacsisti.github.io/PROJEKT/">Ezzel a linkel megnyithatod a publikált weboldalt</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="flip-card">
-    <div class="flip-card-inner">
-        <div class="flip-card-front"> 
-            <header><h3>Elégedettségi kérdőív</h3></header>
-            <img src="kepek/p2.png" style="width:350px;height:350px;">
-            <footer></footer>
-        </div>
-        <div class="flip-card-back">
-            <p>Ez a projekt egy elégedettségi kérdőív amely a felhasználók értékelésit összesíti és mutassa ki.</p> 
-        
-            <a class="link"   href="https://takacsisti.github.io/PROJEKT2/">Ezzel a linkel megnyithatod a publikált weboldalt</a>
-            
-        </div>
-    </div>
-</div>
-
-<div class="flip-card">
-    <div class="flip-card-inner">
-        <div class="flip-card-front"> 
-            <header><h3>Wordle (saját projekt)</h3></header>
-            <img src="kepek/p3.png" style="width:350px;height:350px;">
-            <footer></footer>
-        </div>
-        <div class="flip-card-back">
-            <p>Ez a projekt egy wordle játék melyben egy 5 betűs szót kell kitalálni úgy hogy limitált próbálkozásod van, a zöld színű betű azt jelenti hogy a betű jó helyen van, a narancs azt jelenti hogy a betű szerepel a szóban de nem jó helyen van.</p>
-            <p></p>
-            <a class="link"   href="https://takacsisti.github.io/PROJEKT/">Ezzel a linkel megnyithatod a publikált weboldalt</a>
+    <div class="flip-card bottom-card">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"> 
+                    <header><h3>Dolgozatértélekő App</h3></header>
+                    <img src="kepek/p4.png" style="width:300px;height:300px;">
+                    <footer></footer>
+                </div>
+                <div class="flip-card-back">
+                    <p>Ez a projekt egy olyan app amely összegzi a dolgozatok és a diákok adatait és kiszámítsa a dolgozatok átlagait.</p>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="flip-card">
-    <div class="flip-card-inner">
-        <div class="flip-card-front"> 
-            <header><h3>Dolgozatértélekő App</h3></header>
-            <img src="kepek/p4.png" style="width:350px;height:350px;">
-            <footer></footer>
-        </div>
-        <div class="flip-card-back">
-            <p>Ez a projekt egy olyan app amely összegzi a dolgozatok és a diákok adatait és kiszámítsa a dolgozatok átlagait.</p>
-            <p></p>
+
+    <div id="chatbot-container">
+        <div id="chatbot-header">Chatbot</div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Írj ide...">
+            <button id="chatbot-send">Küldés</button>
         </div>
     </div>
-</div>
 
-<div id="chatbot-container">
-    <div id="chatbot-header">Chatbot</div>
-    <div id="chatbot-messages"></div>
-    <div id="chatbot-input-container">
-        <input type="text" id="chatbot-input" placeholder="Írj ide...">
-        <button id="chatbot-send">Küldés</button>
-    </div>
-</div>
+    <script>
+        window.onload = function() {
+          document.getElementById("popup").style.display = "block";
+          document.getElementById("overlay").style.display = "block";
+        };
 
-<script>
-    window.onload = function() {
-      document.getElementById("popup").style.display = "block";
-      document.getElementById("overlay").style.display = "block";
-    };
+        function closePopup() {
+          document.getElementById("popup").style.display = "none";
+          document.getElementById("overlay").style.display = "none";
+        }
 
-    function closePopup() {
-      document.getElementById("popup").style.display = "none";
-      document.getElementById("overlay").style.display = "none";
-    }
+        const messagesContainer = document.getElementById('chatbot-messages');
+        const inputField = document.getElementById('chatbot-input');
+        const sendButton = document.getElementById('chatbot-send');
 
-    const messagesContainer = document.getElementById('chatbot-messages');
-    const inputField = document.getElementById('chatbot-input');
-    const sendButton = document.getElementById('chatbot-send');
+        function addMessageToChat(sender, text) {
+            const message = document.createElement('div');
+            message.textContent = `${sender}: ${text}`;
+            message.style.margin = '5px 0';
+            if (sender === 'Bot') {
+                message.style.color = 'blue';
+            } else {
+                message.style.color = 'green';
+            }
+            messagesContainer.appendChild(message);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
 
-    function addMessageToChat(sender, text) {
-        const message = document.createElement('div');
-        message.textContent = `${sender}: ${text}`;
-        message.style.margin = '5px 0';
-        if (sender === 'Bot') {
-            message.style.color = 'blue';
+        sendButton.addEventListener('click', () => {
+            const userMessage = inputField.value;
+            if (userMessage.trim() === '') return;
+
+            addMessageToChat('Te', userMessage);
+            inputField.value = '';
+
+            let botResponse = '';
+            if (userMessage.toLowerCase().includes('wordle')) {
+            botResponse = 'Ez egy szókirakós játék, ahol 5 betűs szót kell kitalálnod. Kattints a projektre, hogy többet tudj meg!';
+        } else if (userMessage.toLowerCase().includes('értékelő táblázat')) {
+            botResponse = 'Ez a projekt a tanulók eredményeit értékeli. További információért kattints a linkre!';
+        } else if (userMessage.toLowerCase().includes('kérdőív')) {
+            botResponse = 'Az elégedettségi kérdőív segít az értékelések összegzésében. Kattints a projektre a részletekért!';
+        } else if (userMessage.toLowerCase().includes('dolgozat')) {
+            botResponse = 'Ez az alkalmazás segít a dolgozatok eredményeinek összesítésében és az átlagok kiszámításában. Nézd meg a projektrészleteket!';
+        } else if (userMessage.toLowerCase().includes('üdv') || userMessage.toLowerCase().includes('hello') || userMessage.toLowerCase().includes('szia')) {
+            botResponse = 'Üdvözöllek az oldalamon! Kérdezz bátran.';
+        } else if (userMessage.toLowerCase().includes('projekt')) {
+            botResponse = 'Az oldalon bemutatott projektekhez bővebb információt találsz a kártyákon.';
+        } else if (userMessage.toLowerCase().includes('milyen projekteket találhatok')) {
+            botResponse = 'Az oldalon webfejlesztési és szoftverfejlesztési projekteket találsz, mint például egy Wordle játék, elégedettségi kérdőív, dolgozatértékelő app, és egy értékelő táblázat.';
+        } else if (userMessage.toLowerCase().includes('hogyan készült az oldal')) {
+            botResponse = 'Az oldal HTML, CSS és JavaScript használatával készült, hogy egyszerre legyen vizuálisan vonzó és interaktív.';
+        } else if (userMessage.toLowerCase().includes('milyen technológiákat használtál')) {
+            botResponse = 'A projekteknél különböző technológiákat használtam, például Google Tables-t, JavaScriptet, és HTML/CSS-t a front-end fejlesztéshez.';
+        } else if (userMessage.toLowerCase().includes('hol találhatok még több információt rólad')) {
+            botResponse = 'A CV-m linkjére kattintva több információt találsz rólam és a szakmai hátteremről.';
+        } else if (userMessage.toLowerCase().includes('hogyan léphetek kapcsolatba veled')) {
+            botResponse = 'Az oldalon található projektekhez kapcsolódó linkeken keresztül elérheted az általam készített anyagokat, és a kapcsolati adataim a CV-ben találhatók.';
+        } else if (userMessage.toLowerCase().includes('melyik projektet ajánlod először kipróbálni')) {
+            botResponse = 'Ha szereted a játékokat, kezdd a Wordle projekttel, de ha tanuló vagy, az értékelő táblázat is érdekes lehet számodra.';
         } else {
-            message.style.color = 'green';
+            botResponse = 'Elnézést, nem értem a kérdésedet. Próbálj meg konkrétabb kérdést feltenni a projektekről!';
         }
-        messagesContainer.appendChild(message);
-        messagesContainer.scrollTop = messagesContainer.scrollHeight;
-    }
-
-    sendButton.addEventListener('click', () => {
-        const userMessage = inputField.value;
-        if (userMessage.trim() === '') return;
-
-        addMessageToChat('Te', userMessage);
-        inputField.value = '';
-
-        let botResponse = '';
-        if (userMessage.toLowerCase().includes('wordle')) {
-        botResponse = 'Ez egy szókirakós játék, ahol 5 betűs szót kell kitalálnod. Kattints a projektre, hogy többet tudj meg!';
-    } else if (userMessage.toLowerCase().includes('értékelő táblázat')) {
-        botResponse = 'Ez a projekt a tanulók eredményeit értékeli. További információért kattints a linkre!';
-    } else if (userMessage.toLowerCase().includes('kérdőív')) {
-        botResponse = 'Az elégedettségi kérdőív segít az értékelések összegzésében. Kattints a projektre a részletekért!';
-    } else if (userMessage.toLowerCase().includes('dolgozat')) {
-        botResponse = 'Ez az alkalmazás segít a dolgozatok eredményeinek összesítésében és az átlagok kiszámításában. Nézd meg a projektrészleteket!';
-    } else if (userMessage.toLowerCase().includes('üdv') || userMessage.toLowerCase().includes('hello')) {
-        botResponse = 'Üdvözöllek az oldalamon! Kérdezz bátran.';
-    } else if (userMessage.toLowerCase().includes('projekt')) {
-        botResponse = 'Az oldalon bemutatott projektekhez bővebb információt találsz a kártyákon.';
-    } else if (userMessage.toLowerCase().includes('milyen projekteket találhatok')) {
-        botResponse = 'Az oldalon webfejlesztési és szoftverfejlesztési projekteket találsz, mint például egy Wordle játék, elégedettségi kérdőív, dolgozatértékelő app, és egy értékelő táblázat.';
-    } else if (userMessage.toLowerCase().includes('hogyan készült az oldal')) {
-        botResponse = 'Az oldal HTML, CSS és JavaScript használatával készült, hogy egyszerre legyen vizuálisan vonzó és interaktív.';
-    } else if (userMessage.toLowerCase().includes('milyen technológiákat használtál')) {
-        botResponse = 'A projekteknél különböző technológiákat használtam, például Google Tables-t, JavaScriptet, és HTML/CSS-t a front-end fejlesztéshez.';
-    } else if (userMessage.toLowerCase().includes('hol találhatok még több információt rólad')) {
-        botResponse = 'A CV-m linkjére kattintva több információt találsz rólam és a szakmai hátteremről.';
-    } else if (userMessage.toLowerCase().includes('hogyan léphetek kapcsolatba veled')) {
-        botResponse = 'Az oldalon található projektekhez kapcsolódó linkeken keresztül elérheted az általam készített anyagokat, és a kapcsolati adataim a CV-ben találhatók.';
-    } else if (userMessage.toLowerCase().includes('melyik projektet ajánlod először kipróbálni')) {
-        botResponse = 'Ha szereted a játékokat, kezdd a Wordle projekttel, de ha tanuló vagy, az értékelő táblázat is érdekes lehet számodra.';
-    } else {
-        botResponse = 'Elnézést, nem értem a kérdésedet. Próbálj meg konkrétabb kérdést feltenni a projektekről!';
-    }
 
 
-        addMessageToChat('Bot', botResponse);
-    });
+            addMessageToChat('Bot', botResponse);
+        });
 
-    inputField.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter') {
-            sendButton.click();
-        }
-    });
-</script>
+        inputField.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                sendButton.click();
+            }
+        });
+    </script>
 
 </body>
 </html>
