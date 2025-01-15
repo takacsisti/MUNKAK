@@ -7,6 +7,13 @@
 
   <style>
 
+    .link{
+        color:gold
+    }
+
+    .link1{
+        color:aqua
+    }
 
     .flip-card {
         
@@ -188,7 +195,7 @@
         <img src="kepek/cv.jpg" style="width:250px;height:300px;" >
         <p></p>
         <p></p>
-        <a class="link" href="https://www.canva.com/design/DAGHG7inMbo/a7NA79PqWiry_z6uS7NIew/view?utm_content=DAGHG7inMbo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h322aafa985">A CANVA CV LINKJE</a>
+        <a class="link1" href="https://www.canva.com/design/DAGHG7inMbo/a7NA79PqWiry_z6uS7NIew/view?utm_content=DAGHG7inMbo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h322aafa985">A CANVA CV LINKJE</a>
         <p></p>
         <p></p>
         <button onclick="closePopup()">Bezárás</button>
@@ -249,12 +256,13 @@
             <div class="flip-card-inner">
                 <div class="flip-card-front"> 
                     <header><h3>Dolgozatértélekő App</h3></header>
-                    <img src="kepek/p4.png" style="width:300px;height:300px;">
+                    <img src="kepek/p5.png" style="width:300px;height:300px;">
                     <footer></footer>
                 </div>
                 <div class="flip-card-back">
-                    <p>Ez a projekt egy olyan app amely összegzi a dolgozatok és a diákok adatait és kiszámítsa a dolgozatok átlagait.</p>
+                    <p>Az app célja olyan tanári segédeszközként támogatni az írásbeli dolgozatok értékelésének folyamatát, mellyel a tanulói dolgozatok értékelése automatikusan megtörtének a pontszámok megadása után, a pedagógiai programmal összhangban, illetve azon belül a pontszám határok is módosíthatók.</p>
                     <p></p>
+                    <a class="link"   href="https://sites.google.com/view/ti-pr5/főoldal?authuser=1">Ezzel a linkel megnyithatod a publikált weboldalt</a>
                 </div>
             </div>
         </div>
@@ -314,7 +322,7 @@
             botResponse = 'Az elégedettségi kérdőív segít az értékelések összegzésében. Kattints a projektre a részletekért!';
         } else if (userMessage.toLowerCase().includes('dolgozat')) {
             botResponse = 'Ez az alkalmazás segít a dolgozatok eredményeinek összesítésében és az átlagok kiszámításában. Nézd meg a projektrészleteket!';
-        } else if (userMessage.toLowerCase().includes('üdv') || userMessage.toLowerCase().includes('hello') || userMessage.toLowerCase().includes('szia')) {
+        } else if (userMessage.toLowerCase().includes('üdv') || userMessage.toLowerCase().includes('hello')) {
             botResponse = 'Üdvözöllek az oldalamon! Kérdezz bátran.';
         } else if (userMessage.toLowerCase().includes('projekt')) {
             botResponse = 'Az oldalon bemutatott projektekhez bővebb információt találsz a kártyákon.';
